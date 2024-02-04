@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, width=device-width">
+        <link href="website.css" rel="stylesheet">
+        <title>homepage</title>
+    </head>
+    <body>
+        <h1>Tic Tac Toe</h1>
+        <p>
+            <span id="player1">Player:  X</span>
+            <span id="player2">Computer:  O</span>
+        </p>
+
+        <div id="field">
+            <div class="vl1"></div>
+            <div class="vl2"></div>
+
+            <div class="hl1"></div>
+            <div class="hl2"></div>
+
+            
+            <button name="field" value="upper_left" id="upper_left" onclick="field_pressed(event)"></button>
+            <button name="field" value="upper_middle" id="upper_middle" onclick="field_pressed(event)"></button>
+            <button name="field" value="upper_right" id="upper_right" onclick="field_pressed(event)"></button>
+            <button name="field" value="middle_left" id="middle_left" onclick="field_pressed(event)"></button>
+            <button name="field" value="middle_middle" id="middle_middle" onclick="field_pressed(event)"></button>
+            <button name="field" value="middle_right" id="middle_right" onclick="field_pressed(event)"></button>
+            <button name="field" value="bottom_left" id="bottom_left" onclick="field_pressed(event)"></button>
+            <button name="field" value="bottom_middle" id="bottom_middle" onclick="field_pressed(event)"></button>
+            <button name="field" value="bottom_right" id="bottom_right" onclick="field_pressed(event)"></button>
+        </div>
+
+        <div id="error">
+            <p id="error"></p>
+        </div>
+        <div id="error2">
+            <p id="error2"></p>
+        </div>
+        <div class="neu">
+            <button name="neu" id="neu" onclick="new_pressed(event)">Neu</button>
+        </div>
+
+        <script src="tic_tac_toe.js"></script>
+    </body>
+</html>
